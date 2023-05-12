@@ -1,8 +1,9 @@
 
 
 
-import Star from './Components/Star';
+
 import './Styles/index.css'
+import StarRating from "./Components/StarRating";
 
 function App() {
 
@@ -11,8 +12,8 @@ function App() {
   return (
     <main>
       <div className="container center">
-        
-         <Star />
+      <StarRating />
+      
        
       </div>
   

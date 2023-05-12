@@ -30,6 +30,33 @@ body {
 .center{
     display: flex;
     justify-content: center;
-    padding-top: 20%;
+    flex-direction: column;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.center div {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+   
+}
+
+.center div svg {
+    color: #ffffff66;
+    margin: auto 3px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.center h2 {
+    height: 30px;
 }
 
