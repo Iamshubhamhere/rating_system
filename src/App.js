@@ -1,10 +1,22 @@
 
+
+
+import Star from './Components/Star';
+import './Styles/index.css'
+
 function App() {
+
+
+ 
   return (
-    <div className="App">
+    <main>
+      <div className="container center">
+        
+         <Star />
+       
+      </div>
   
-    </div>
+    </main>
   );
 }
-
 export default App;
