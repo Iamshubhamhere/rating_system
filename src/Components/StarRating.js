@@ -5,6 +5,11 @@ function StarRating() {
   const [rating, setRating] = useState('');
   const [presentIndex, setPresentIndex] = useState(-1);
 
+  function updateRating(value, index) {
+    setRating(value);
+    setPresentIndex(index);
+  }
+
   const text = [
     'Oops!',
     'Not bad',
@@ -12,11 +17,6 @@ function StarRating() {
     'Excellent!',
     'Outstanding !'
   ];
-
-  function updateRating(value, index) {
-    setRating(value);
-    setPresentIndex(index);
-  }
 
   return (
     <section className='center'>

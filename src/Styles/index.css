@@ -21,42 +21,108 @@ body {
 .container {
   width: min(100% - 30px, 1280px);
   margin-inline: auto;
+  height: 100vh;
 }
 
 body {
-    background-color: #1a1c24;
-}
-
-.center{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  background-color: #1a1c24;
 }
 
 .center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.center div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.center div svg {
+  color: #ffffff66;
+  margin: auto 3px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.center h2 {
+  height: 30px;
+}
+
+
+img {
+    border-radius: 5px;
+}
+
+
+.inputs {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-}
-
-.center div {
-    justify-content: center;
+    background-color: var(--app-light-gray);
+    padding: 10px;
+    border-radius: 5px;
+    width: 450px;
+    height: 300px;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 0.1);
+    animation: 0.25s linear anim;
     display: flex;
-    margin-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
    
+} 
+
+
+.inputs::backdrop {
+        background-color: rgb(13 16 19 / 0.3);
+        backdrop-filter: blur(10px);
+    }
+
+
+.hide {
+  display: none;
+} 
+
+
+.visible {
+display: block;
 }
 
-.center div svg {
-    color: #ffffff66;
-    margin: auto 3px;
-    font-size: 50px;
+
+
+input[type=button] {
+    padding:5px;
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px;
+    color: #fff;
+    background-color: var(--app-green);
     cursor: pointer;
-}
+    transition: all 0.25s ease-in-out;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    text-align: center;
+    text-decoration: none;
+} 
 
-.center h2 {
-    height: 30px;
-}
 
