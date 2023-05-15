@@ -16,6 +16,7 @@
 
 body {
   background-color: #1a1c24;
+
 }
 
 .container {
@@ -41,6 +42,7 @@ body {
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
+
 }
 
 .center div {
@@ -68,16 +70,12 @@ img {
 
 
 .inputs {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--app-light-gray);
     padding: 10px;
     border-radius: 5px;
     width: 450px;
     height: 300px;
-    box-shadow: 2px 2px 2px rgb(0 0 0 / 0.1);
     animation: 0.25s linear anim;
     display: flex;
     flex-direction: column;
@@ -96,11 +94,15 @@ img {
 
 .hide {
   display: none;
+  opacity: 0; 
 } 
 
 
 .visible {
-display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
 }
 
 
